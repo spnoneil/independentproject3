@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('form').submit(function(e) {
     e.preventDefault();
 
-    const neighbor = 'Won\'t you be my neighbor, ';
+    const neighbor = "Won't you be my neighbor, ";
     const boop = "Boop!";
     const beep = "Beep!";
     let outputArray = [];
@@ -25,16 +25,17 @@ $(document).ready(function() {
       return robo2.join(", ");
     };
 
+
+
     const inputNum = parseInt($("input#inputNum").val());
     const inputName = $("input#inputName").val();
 
     $("#outputText").text(robo(inputNum));
-    // $("#finalName").text(inputName)
     $("#form1").trigger("reset").hide();
-    $("#output").fadeToggle(1500);
+    $("#output").fadeIn(1500);
     $("#back").click(function() {
       $("#output").hide();
-      $("#form1").slideToggle(500);
+      $("#form1").show(500);
     })
   });
 });
