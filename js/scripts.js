@@ -1,9 +1,10 @@
 const neighbor = 'Won\'t you be my neighbor, ';
 const boop = "Boop!";
 const beep = "Beep!";
+let outputArray = [];
 
-let robo = function(input) {
-  let outputArray = [];
+let robo = function(input, arr) {
+
   for (let i = 0; i <= input; i++) {
     outputArray.push(i.toString());
   }
@@ -19,21 +20,28 @@ let robo = function(input) {
       return " " + array;
     }
   });
-  return robo2.join(", ");
+  let robo3 = robo2.map(function(arr) {
+      if arr.includes(", ")) {
+      return
+    }
+  })
+return robo2.join(", ");
 };
 
 $(document).ready(function() {
   $('form').submit(function(e) {
     e.preventDefault();
     const inputNum = parseInt($("input#inputNum").val());
-    // const inputName = $("input#inputName").val();
+    const inputName = $("input#inputName").val();
     $("#outputText").text(robo(inputNum));
     // $("#finalName").text(inputName)
     $("#form1").trigger("reset").hide();
     $("#output").fadeToggle(1500);
+
+
+    $("#back").click(function() {
+      $("#output").hide();
+      $("#form1").slideToggle(500);
+    })
   });
-  $("#back").click(function() {
-    $("#output").hide();
-    $("#form1").slideToggle(500);
-  })
 });
