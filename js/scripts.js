@@ -12,6 +12,8 @@ let robo = function(input) {
       return array = neighbor;
     } else if (array.includes("2")) {
       return array = boop;
+    } else if (array.includes("1")) {
+      return array = beep;
     } else {
       return array;
     }
