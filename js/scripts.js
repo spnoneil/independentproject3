@@ -26,6 +26,12 @@ $(document).ready(function() {
   $('form').submit(function(e) {
     e.preventDefault();
     const inputNum = parseInt($("input#inputNum").val());
-    console.log(robo(inputNum))
+    $("#outputText").text(robo(inputNum));
+    $("#form1").trigger("reset").hide();
+    $("#output").fadeToggle(1500);
   });
+  $("#back").click(function() {
+    $("#output").hide();
+    $("#form1").slideToggle(500);
+  })
 });
