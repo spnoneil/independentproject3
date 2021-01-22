@@ -1,7 +1,6 @@
-const neighbor = "Won't you be my neighbor, ";
+const neighbor = 'Won\'t you be my neighbor, ';
 const boop = "Boop!";
 const beep = "Beep!";
-// const nameHTML = $("#outputText").push('<div id="name"></div>');
 
 let robo = function(input) {
   let outputArray = [];
@@ -19,24 +18,17 @@ let robo = function(input) {
     } else {
       return " " + array;
     }
-
   });
-  // outputArray.forEach(function() {
-  //   if (outputArray.includes("neighbor")) {
-  //     return outputArray.push("THIS IS PUSH")
-  //   }
-  // })
-  return robo2.join(" ");
+  return robo2.join(", ");
 };
 
 $(document).ready(function() {
   $('form').submit(function(e) {
     e.preventDefault();
     const inputNum = parseInt($("input#inputNum").val());
-    const inputName = $("input#nameInput").val();
-
+    // const inputName = $("input#inputName").val();
     $("#outputText").text(robo(inputNum));
-    $("#name").text(inputName);
+    // $("#finalName").text(inputName)
     $("#form1").trigger("reset").hide();
     $("#output").fadeToggle(1500);
   });
