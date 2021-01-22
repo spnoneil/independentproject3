@@ -1,9 +1,21 @@
 body {
   text-align: center;
+  background-color: rgb(49, 45, 45);
+  color: rgb(180, 81, 247);
 }
 
-#form1 {
-  margin: 30%;
+.jumbotron {
+  background-color: red;
+  background-image: linear-gradient(to bottom right, rgb(209, 106, 209), rgb(97, 4, 158));
+  color: rgb(17, 197, 92);
+  border-radius: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#form1,
+#output {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #output {
