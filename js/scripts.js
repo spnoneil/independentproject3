@@ -10,6 +10,8 @@ let robo = function(input) {
   let robo2 = outputArray.map(function(array) {
     if (array.includes("3")) {
       return array = neighbor;
+    } else if (array.includes("2")) {
+      return array = boop;
     } else {
       return array;
     }
