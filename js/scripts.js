@@ -26,22 +26,19 @@ $(document).ready(function() {
     };
 
 
-
     const inputNum = parseInt($("input#inputNum").val());
     const inputName = $("input#inputName").val();
     const roboger = robo(inputNum);
+
     $("#outputText").text(roboger);
     $("#form1").trigger("reset").hide();
     $("#output").fadeIn(1500);
-
     $("#reverse").click(function() {
       $("#outputText").text(roboger.split("").reverse().join(""));
     });
-
     $("#back").click(function() {
       $("#output").hide();
       $("#form1").show(500);
     });
-
   });
 });
