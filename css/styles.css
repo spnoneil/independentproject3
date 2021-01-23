@@ -2,14 +2,32 @@ body {
   text-align: center;
   background-color: rgb(49, 45, 45);
   color: rgb(180, 81, 247);
+  padding-bottom: 20%;
+}
+
+.btn {
+  margin: 40px;
+}
+
+#roboger {
+  position: relative;
+  z-index: -1;
+  width: 50%;
+  margin: 30px;
 }
 
 .jumbotron {
   background-color: red;
   background-image: linear-gradient(to bottom right, rgb(209, 106, 209), rgb(97, 4, 158));
-  color: rgb(17, 197, 92);
+  color: rgb(21, 230, 108);
   border-radius: 25px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#form1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
 }
 
 #form1,
@@ -20,4 +38,11 @@ body {
 
 #output {
   display: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#outputText {
+  overflow: scroll;
+  max-height: 400px;
+  max-width: auto;
 }

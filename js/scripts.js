@@ -5,9 +5,9 @@ $(document).ready(function() {
     const neighbor = "Won't you be my neighbor, ";
     const boop = "Boop!";
     const beep = "Beep!";
-    let outputArray = [];
 
     let robo = function(input) {
+      let outputArray = [];
       for (let i = 0; i <= input; i++) {
         outputArray.push(i.toString());
       }
@@ -29,13 +29,19 @@ $(document).ready(function() {
 
     const inputNum = parseInt($("input#inputNum").val());
     const inputName = $("input#inputName").val();
-
-    $("#outputText").text(robo(inputNum));
+    const roboger = robo(inputNum);
+    $("#outputText").text(roboger);
     $("#form1").trigger("reset").hide();
     $("#output").fadeIn(1500);
+
+    $("#reverse").click(function() {
+      $("#outputText").text(roboger.split("").reverse().join(""));
+    });
+
     $("#back").click(function() {
       $("#output").hide();
       $("#form1").show(500);
-    })
+    });
+
   });
 });
