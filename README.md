@@ -17,15 +17,20 @@ Created in HTML/CSS/JavaScript, will allow user to input a single number and sho
 | **robo2();** | "It should return an array with all numbers with '2' in them replaced with 'Boop!', after previous features run" | (robo2("3").toEqual("0, 1, Boop!, Won't you be my neighbor?")); |
 | **robo2();** | "It should return an array with all numbers with '1' in them replaced with 'Beep!', after previous features run" | (robo2("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?")); |
 
-Describe: robo2();
-Test: "It should return an array with all numbers with "3" in them replaced with 'Won't you be my neighbor?'"
-Expect(robo2("3").toEqual("0, 1, 2, Won't you be my neighbor?"));
+**Describe:** _robo2();_
 
-Test: "It should return an array with all numbers with '2' in them replaced with 'Boop!', after previous features run"
-Expect(robo2("3").toEqual("0, 1, Boop!, Won't you be my neighbor?"));
 
-Test: "It should return an array with all numbers with '1' in them replaced with 'Beep!', after previous features run" | (robo2("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?"
-Expect(robo2("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?"));
+**Test:** _"It should return an array with all numbers with "3" in them replaced with 'Won't you be my neighbor?'"_
+
+**Expect**_(robo2("3").toEqual("0, 1, 2, Won't you be my neighbor?"));_
+
+**Test:** _"It should return an array with all numbers with '2' in them replaced with 'Boop!', after previous features run"_
+
+**Expect**_(robo2("3").toEqual("0, 1, Boop!, Won't you be my neighbor?"));_
+
+**Test:** _"It should return an array with all numbers with '1' in them replaced with 'Beep!', after previous features run"_
+
+**Expect**_(robo2("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?"));_
 
 ## Setup/Installation Requirements
 
