@@ -13,17 +13,26 @@ Created in HTML/CSS/JavaScript, will allow user to input a single number and sho
 
 | Describe | Test | Expect |
 | :-------------     | :------------- | :------------- |
-| **beepBoop();** | "It should return an array with all numbers with "3" in them replaced with 'Won't you be my neighbor?'"| (beepBoop("3").toEqual("0, 1, 2, Won't you be my neighbor?")); |
-| **beepBoop();** | "It should return an array with all numbers with "2" in them replaced with "Boop!", after previous features run | (beepBoop("3").toEqual("0, 1, Boop!, Won't you be my neighbor?")); |
-| **beepBoop();** | "It should return an array with all numbers with "1" in them replaced with "Beep!", after previous features run | (beepBoop("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?")); |
-| **beepBoop();** | "It should return an error message if anything but a number is input | (beepBoop("hi").toEqual("Please enter a number")); |
+| **robo2();** | "It should return an array with all numbers with '3' in them replaced with 'Won't you be my neighbor?'"| (robo2("3").toEqual("0, 1, 2, Won't you be my neighbor?")); |
+| **robo2();** | "It should return an array with all numbers with '2' in them replaced with 'Boop!', after previous features run" | (robo2("3").toEqual("0, 1, Boop!, Won't you be my neighbor?")); |
+| **robo2();** | "It should return an array with all numbers with '1' in them replaced with 'Beep!', after previous features run" | (robo2("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?")); |
+
+Describe: robo2();
+Test: "It should return an array with all numbers with "3" in them replaced with 'Won't you be my neighbor?'"
+Expect(robo2("3").toEqual("0, 1, 2, Won't you be my neighbor?"));
+
+Test: "It should return an array with all numbers with '2' in them replaced with 'Boop!', after previous features run"
+Expect(robo2("3").toEqual("0, 1, Boop!, Won't you be my neighbor?"));
+
+Test: "It should return an array with all numbers with '1' in them replaced with 'Beep!', after previous features run" | (robo2("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?"
+Expect(robo2("3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?"));
 
 ## Setup/Installation Requirements
 
 1. Clone/Download from GitHub
 2. Unzip, if necessary
 3. Run index.html in browser of choice
-4. Alternatively, view on [GitHub Pages]()
+4. Alternatively, view on [GitHub Pages](https://github.com/spnoneil/independentproject3)
 
 ## Known Bugs
 
